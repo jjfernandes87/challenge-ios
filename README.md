@@ -4,6 +4,13 @@ Seguindo o guia de programação criado para o desafio
 
 Mais informações sobre o teste [Teste](https://github.com/jjfernandes87/challenge-ios/blob/master/TESTE.md). 
 
+### Osbervações sobre o projeto
+
+###### Funcionalidade 03
+Exibir uma lista dos produtos mais vendidos. A lista possui um número fixo de produtos e não há necessidade de scroll infinito. Ao clicar em um produto, o usuário deve ser direcionado à Funcionalidade 05.
+
+No Swagger não existe paginação e como o número de itens é grande eu deixei com scroll a home
+
 ## Arquitetura
 
 Para esse projeto foi usado o VIPER, dessa forma posso trabalhar com modulos e reaproveitar o máximo de código.
