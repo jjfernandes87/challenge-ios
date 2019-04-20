@@ -1,92 +1,78 @@
-# a Lodjinha
+# Desafio: a Lodjinha 
 
-Versão mínima: iOS 9</br>
-Linguagem: Swift</br>
+Seguindo o guia de programação criado para o desafio
+Mais informações sobre o teste [Teste](https://github.com/jjfernandes87/challenge-ios/blob/master/TESTE.md). 
 
-Serão consideradas funcionalidades completas se:</br>
-- O descritivo da funcionalidade for implementado completamente.</br>
-- A tela estiver aderente ao protótipo.</br>
-- Não houver bugs impeditivos que atrapalhem ou impossibilitem a execução da funcionalidade.</br>
-- O layout estiver aderente à todos os devices que suportem a versão mínima e superiores.</br>
+## Arquitetura
 
-Serão considerados bônus:</br>
-- UI Testing </br>
-- Unit Testing
+Para esse projeto foi usado o VIPER, dessa forma posso trabalhar com modulos e reaproveitar o máximo de código.
+Definição de pastas ficou:
+- Modules
+    - Home
+    - About
+    - Product
+        - Collection
+        - Detail
+- Utils
+- Resources
 
-## DESAFIO
+## Testes
 
-### 1 - Home
+Para esse projeto foi usado o Quick & Nimble para os testes unitários e o XCUITest para os de interface
+Alem disso estou usando fastlane Snapshot 
+
+## Frameworks
 	
-###### Premissas:
-- A tela de Home deve ser acessada ao tocar a opção Home do Tab Bar, conforme protótipo.
-- O tamanho total da tela de Home deve ser determinada pelo tamanho total de todos as views somadas; ou seja, não deverá haver sub-scroll vertical.
-- Ao exibir qualquer Funcionalidade externa acessada pela Home, a Tab Bar não deve aparecer.
+###### Externos:
+- pod 'Alamofire'
+- pod 'AlamofireImage', '~> 3.5'
+- pod 'Quick'
+- pod 'Nimble'
 
-###### Funcionalidade 01
-Exibir a barra de banners rotativo. Cada banner deve preencher todo o espaço horizontal da tela. Ao realizar o swipe left ou swipe right, o banner deve ser trocado pelo próximo ou anterior, conforme disponibilidade. Utilizar um indicador para facilitar ao usuário saber quantos banners existem e em qual posição ele está.
+###### Internos:
 
-###### Funcionalidade 02
-Exibir um menu deslizável horizotal com as categorias, conforme protótipo. O número de categorias é fixo, e não há necessidade de scroll infinito. Ao clicar em uma categoria, o app deve redirecionar o usuário para a Funcionalidade 04.
+Estou usando algumas libs próprias porem por conta da regra de iOS9 não foi possivel deixá-la nos pods e trouxe para dentro do projeto
+- SelfTableViewManager - Mais informações [SelfTableViewManager](https://github.com/jjfernandes87/SelfTableViewManager). 
 
-###### Funcionalidade 03
-Exibir uma lista dos produtos mais vendidos. A lista possui um número fixo de produtos e não há necessidade de scroll infinito. Ao clicar em um produto, o usuário deve ser direcionado à Funcionalidade 05.
+## Como executar
 
-### 2 - Listagem de Categorias
-	
-###### Premissas:
-- A Tab Bar não deve ser exibida.
-- Ao voltar para Home, a Tab Bar deve voltar a ser exibida.
-- Um indicador de loading deve ser exibido enquanto uma nova página estiver sendo carregada.
-- O usuário não deve ficar com a rolagem e navegação travados enquanto uma nova página estiver sendo carregada.
+Primeiro de tudo, você precisa instalar o Bundler. O Bundler fará com que todos os desenvolvedores que trabalham no projeto usem as mesmas versões de serviços como Cocoapods e Fastlane.
 
-###### Funcionalidade 04
-Exibir uma lista dos produtos da categoria selecionada, conforme protótipo. O lista possui um número desconhecido de produtos, e deverá ser paginado, limitando a página em 20 registros. Ao tocar em um produto, o usuário deverá ser direcionado à Funcionalidade 05.
+Abra um Terminal e instale o Bundler usando o comando:
 
-### 3 - Exibição de Produto
+```
+gem install bundler
+```
 
-###### Premissas:
-- A Tab Bar não deve ser exibida.
-- Se exibida a partir da Home, ao voltar, a Tab Bar deve ser exibida novamente.
-	
-###### Funcionalidade 05
-Exibir a descrição do produto conforme protótipo. O botão Reservar deve estar sempre visível, fixado na parte de baixo da tela. O texto de descrição poderá vir formatado como HTML. O app deve tratar esse texto e exibí-lo corretamente (negrito, itálico, etc).
-	
-###### Funcionalidade 06
-Ao clicar no botão Reservar, o app deve efetuar a reserva do produto com o servidor. Exibir a mensagem de sucesso ou erro da reserva. O usuário não deve poder tocar outra vez no botão enquanto a primeira reserva não for concluída. Se a reserva for concluída com sucesso, após fechar a mensagem de sucesso, retornar para a tela que chamou a Exibição de Produto.
+Para executar o aplicativo, execute os seguintes comandos:
 
-### 4 - Sobre
-	
-###### Premissas:
-- A tela de Sobre deve ser acessada ao tocar a opção Home do Tab Bar, conforme protótipo.
+xxx```
+cd [pasta do projeto]
+bundle install
+```
 
-###### Funcionalidade 07
-Exibir o logo e o nome do app. Na parte de baixo da tela, exibir o nome do desenvolvedor (seu nome) e a data de desenvolvimento.
+O último comando instalará todas as dependências necessárias para executar o aplicativo, como Cocoapods e Fastlane. Em seguida, execute o seguinte comando para instalar as dependências do Cocoapods:
 
-## RECURSOS
+```
+bundle exec pod install
+```
 
-###### Protótipo Navegável
+## Como testar
 
-https://marvelapp.com/1db0728
+Se você quiser executar testes localmente, basta usar Fastlane:
 
-###### Fontes e Cores
+```
+bundle exec fastlane tests
+```
 
-https://scene.zeplin.io/project/589a7ec9177ff7932d257334
+Se você quiser ver a cobertura de teste
 
-https://fonts.google.com/specimen/Pacifico
+```
+bundle exec fastlane coverage
+```
 
-Os arquivos das imagens estão na pasta imagens.
+Se você quiser ver as imagens
 
-###### Documentação
-
-https://alodjinha.herokuapp.com/swagger-ui.html
-
-## CONCLUSÃO
-
-Crie um Fork desse repositório e envie um pull request.</br>
-Caso seu projeto possua alguma pré condição para ser executado (EX: fazer o pod install), crie um arquivo README.md com um passo a passo para que seja possível executá-lo.</br>
-Projetos que não puderem ser executados não serão avaliados.
-
-# COMEÇAR!!!
-
-Foque em entregar funcionalidades completas!</br></br>
-Quantidade não é qualidade!
+```
+bundle exec fastlane screenshots
+```
