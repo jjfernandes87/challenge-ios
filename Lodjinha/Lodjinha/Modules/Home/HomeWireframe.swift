@@ -21,6 +21,7 @@ class HomeWireframe: NSObject {
 		super.init()
 
 		let view = self.viewControllerFromStoryboard(HomeView.self, title: "a Lodjinha") as! HomeView
+        view.navigationItem.titleView = UIImageView(image: UIImage(named: "logoNavbar"))
         let interactor = HomeInteractor()
 		let presenter = HomePresenter()
 

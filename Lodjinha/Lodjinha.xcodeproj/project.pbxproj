@@ -343,12 +343,12 @@
 		86B6124D226BCB7E0069AC60 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				86B6124E226BCB7E0069AC60 /* HomeInteractor.swift */,
-				86B6124F226BCB7E0069AC60 /* HomeView.swift */,
-				86B61250226BCB7E0069AC60 /* Home.storyboard */,
-				86B61251226BCB7E0069AC60 /* HomeWireframe.swift */,
-				86B61252226BCB7E0069AC60 /* HomePresenter.swift */,
 				86B61253226BCB7E0069AC60 /* Modules */,
+				86B61250226BCB7E0069AC60 /* Home.storyboard */,
+				86B6124F226BCB7E0069AC60 /* HomeView.swift */,
+				86B61252226BCB7E0069AC60 /* HomePresenter.swift */,
+				86B6124E226BCB7E0069AC60 /* HomeInteractor.swift */,
+				86B61251226BCB7E0069AC60 /* HomeWireframe.swift */,
 				86B6126B226BCB7E0069AC60 /* HomeProtocols.swift */,
 				86B6126C226BCB7E0069AC60 /* Entities */,
 			);

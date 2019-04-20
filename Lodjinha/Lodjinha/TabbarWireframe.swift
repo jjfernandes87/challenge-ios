@@ -40,7 +40,7 @@ extension TabbarWireframe {
         
         return navigationController(controller)
     }
-    
+
     internal func aboutController() -> UIViewController {
         let controller = AboutWireframe().view!
         controller.tabBarItem = tabBarItem(tag: 1, title: "Sobre", icon: "tag")
@@ -52,7 +52,8 @@ extension TabbarWireframe {
 // MARK: - Private methods
 extension TabbarWireframe {
     private func tabBarItem(tag: Int, title: String, icon: String) -> UITabBarItem? {
-        let tab = UITabBarItem(title: title, image: UIImage(named: icon), tag: tag)
+        let tab = UITabBarItem(title: title, image: UIImage(named: "\(icon)Deselected"), selectedImage: UIImage(named: "\(icon)Selected"))
+        tab.tag = tag
         return tab
     }
     
