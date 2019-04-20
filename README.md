@@ -1,11 +1,13 @@
 # Desafio: a Lodjinha 
 
 Seguindo o guia de programação criado para o desafio
+
 Mais informações sobre o teste [Teste](https://github.com/jjfernandes87/challenge-ios/blob/master/TESTE.md). 
 
 ## Arquitetura
 
 Para esse projeto foi usado o VIPER, dessa forma posso trabalhar com modulos e reaproveitar o máximo de código.
+
 Definição de pastas ficou:
 - Modules
     - Home
@@ -19,6 +21,7 @@ Definição de pastas ficou:
 ## Testes
 
 Para esse projeto foi usado o Quick & Nimble para os testes unitários e o XCUITest para os de interface
+
 Alem disso estou usando fastlane Snapshot 
 
 ## Frameworks
@@ -32,6 +35,7 @@ Alem disso estou usando fastlane Snapshot
 ###### Internos:
 
 Estou usando algumas libs próprias porem por conta da regra de iOS9 não foi possivel deixá-la nos pods e trouxe para dentro do projeto
+
 - SelfTableViewManager - Mais informações [SelfTableViewManager](https://github.com/jjfernandes87/SelfTableViewManager). 
 
 ## Como executar
