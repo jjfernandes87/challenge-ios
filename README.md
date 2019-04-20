@@ -46,8 +46,7 @@ gem install bundler
 
 Para executar o aplicativo, execute os seguintes comandos:
 
-xxx```
-cd [pasta do projeto]
+```
 bundle install
 ```
 
