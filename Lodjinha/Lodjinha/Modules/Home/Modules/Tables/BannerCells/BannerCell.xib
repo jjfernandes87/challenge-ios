@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerCell" customModule="Lodjinha" customModuleProvider="target">
+            <connections>
+                <outlet property="controllerCell" destination="KGk-i7-Jjw" id="0ZP-CA-coi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BannerCell" rowHeight="150" id="KGk-i7-Jjw" customClass="BannerCellView" customModule="Lodjinha" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CiW-1y-RdY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150.5"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="233-ks-gMW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="150.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="07g-S4-RPH">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="233-ks-gMW" firstAttribute="top" secondItem="CiW-1y-RdY" secondAttribute="top" id="eup-Wr-KHA"/>
+                            <constraint firstAttribute="height" constant="150" id="hhF-yH-Wxn"/>
+                            <constraint firstAttribute="trailing" secondItem="233-ks-gMW" secondAttribute="trailing" id="jUm-1G-flS"/>
+                            <constraint firstItem="233-ks-gMW" firstAttribute="leading" secondItem="CiW-1y-RdY" secondAttribute="leading" id="m2s-5t-hic"/>
+                            <constraint firstAttribute="bottom" secondItem="233-ks-gMW" secondAttribute="bottom" id="u7u-tL-tWg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CiW-1y-RdY" secondAttribute="bottom" id="79D-tq-kwp"/>
+                    <constraint firstItem="CiW-1y-RdY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Cj6-UJ-WIO"/>
+                    <constraint firstItem="CiW-1y-RdY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XtU-mv-svq"/>
+                    <constraint firstAttribute="trailing" secondItem="CiW-1y-RdY" secondAttribute="trailing" id="aPf-1I-Q4C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collection" destination="233-ks-gMW" id="BcM-gq-4Kb"/>
+                <outlet property="controller" destination="-1" id="CSV-kU-G7A"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
