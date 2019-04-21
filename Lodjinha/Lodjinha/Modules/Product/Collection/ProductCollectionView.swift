@@ -25,13 +25,22 @@ class ProductCollectionView: BaseViewController, ProductCollectionPresenterOutpu
         self.tableView.setRows(rows)
         self.setViewStatus(.presenting)
     }
-
+    
+    func appendRows(_ rows: [AnyObject]) {
+        self.tableView.removeAt(position: self.tableView.rows.count-1, rowsCount: 0, animation: .automatic)
+        self.tableView.insertRows(rows: rows, at: self.tableView.rows.count, animation: .top)
+        self.presenter.enableNextPage()
+    }
 }
 
 // MARK: - TableViewManagerDelegate
 extension ProductCollectionView: TableViewManagerDelegate {
     func tableViewManager(table: SelfTableViewManager, didSelectRow row: CellController, atSection section: SectionController?) {
         self.presenter.didSelectRow(row)
+    }
+    
+    func tableViewManager(tableView: SelfTableViewManager, willDisplay cell: CellController) {
+        self.presenter.willDisplay(cell)
     }
 }
 

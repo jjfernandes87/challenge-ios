@@ -74,6 +74,8 @@
 		86B612C1226BCB7E0069AC60 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B61290226BCB7E0069AC60 /* Product.storyboard */; };
 		86B612C2226BCB7E0069AC60 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B61292226BCB7E0069AC60 /* Category.swift */; };
 		86B612C3226BCB7E0069AC60 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B61293226BCB7E0069AC60 /* Product.swift */; };
+		86F9B433226BE4F400DD2F84 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F9B431226BE4F400DD2F84 /* LoadingCell.swift */; };
+		86F9B434226BE4F400DD2F84 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86F9B432226BE4F400DD2F84 /* LoadingCell.xib */; };
 		86FD8CDA226BC48E0017C6F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD8CD9226BC48E0017C6F5 /* AppDelegate.swift */; };
 		86FD8CE1226BC48F0017C6F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FD8CE0226BC48F0017C6F5 /* Assets.xcassets */; };
 		86FD8CE4226BC48F0017C6F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FD8CE2226BC48F0017C6F5 /* LaunchScreen.storyboard */; };
@@ -173,6 +175,8 @@
 		86B61290226BCB7E0069AC60 /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		86B61292226BCB7E0069AC60 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		86B61293226BCB7E0069AC60 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		86F9B431226BE4F400DD2F84 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		86F9B432226BE4F400DD2F84 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		86FD8CD6226BC48E0017C6F5 /* Lodjinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lodjinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FD8CD9226BC48E0017C6F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86FD8CE0226BC48F0017C6F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -483,6 +487,7 @@
 		86B61276226BCB7E0069AC60 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				86F9B42F226BE4D400DD2F84 /* Modules */,
 				86B61277226BCB7E0069AC60 /* ProductCollectionPresenter.swift */,
 				86B61278226BCB7E0069AC60 /* ProductCollectionProtocols.swift */,
 				86B61279226BCB7E0069AC60 /* ProductCollectionView.swift */,
@@ -567,6 +572,23 @@
 				86B61293226BCB7E0069AC60 /* Product.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		86F9B42F226BE4D400DD2F84 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				86F9B430226BE4DB00DD2F84 /* Tables */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		86F9B430226BE4DB00DD2F84 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				86F9B431226BE4F400DD2F84 /* LoadingCell.swift */,
+				86F9B432226BE4F400DD2F84 /* LoadingCell.xib */,
+			);
+			path = Tables;
 			sourceTree = "<group>";
 		};
 		86FD8CCD226BC48E0017C6F5 = {
@@ -745,6 +767,7 @@
 				86B61245226BCB720069AC60 /* NoInternet.xib in Resources */,
 				86B61244226BCB720069AC60 /* Loading.xib in Resources */,
 				86B612A0226BCB7E0069AC60 /* CategoryCell.xib in Resources */,
+				86F9B434226BE4F400DD2F84 /* LoadingCell.xib in Resources */,
 				86B612A2226BCB7E0069AC60 /* ProductCell.xib in Resources */,
 				86B612AE226BCB7E0069AC60 /* About.storyboard in Resources */,
 				86B612A5226BCB7E0069AC60 /* CollectionCategoryCell.xib in Resources */,
@@ -955,6 +978,7 @@
 				86B61295226BCB7E0069AC60 /* HomeView.swift in Sources */,
 				86B612A8226BCB7E0069AC60 /* Banner.swift in Sources */,
 				86B61298226BCB7E0069AC60 /* HomePresenter.swift in Sources */,
+				86F9B433226BE4F400DD2F84 /* LoadingCell.swift in Sources */,
 				86B612BA226BCB7E0069AC60 /* TitleCell.swift in Sources */,
 				86FD8CDA226BC48E0017C6F5 /* AppDelegate.swift in Sources */,
 				86B612C3226BCB7E0069AC60 /* Product.swift in Sources */,

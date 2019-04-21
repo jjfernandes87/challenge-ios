@@ -17,18 +17,22 @@ protocol ProductCollectionWireframeProtocol: class {
 // MARK: - Interactor
 
 protocol ProductCollectionInteractorInputProtocol {
-    func downloadData()
+    func downloadData(currentPage: Int)
+    func moreData(currentPage: Int)
 }
 
 // MARK: - Presenter
 
 protocol ProductCollectionPresenterInputProtocol: class {
     func loadApplication()
+    func enableNextPage()
     func didSelectRow(_ row: CellController)
+    func willDisplay(_ cell: CellController)
 }
 
 protocol ProductCollectionInteractorOutputProtocol: class {
-    func contentResult(products: [Product])
+    func contentResult(products: [Product], nextPage: Int)
+    func moreContentResult(products: [Product], nextPage: Int)
     func contentResult(error: ApiRequestError)
 }
 
@@ -36,4 +40,5 @@ protocol ProductCollectionInteractorOutputProtocol: class {
 
 protocol ProductCollectionPresenterOutputProtocol: class {
     func setRows(_ rows: [AnyObject])
+    func appendRows(_ rows: [AnyObject])
 }
