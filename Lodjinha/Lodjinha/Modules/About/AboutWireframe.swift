@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutWireframe: NSObject, AboutWireframeProtocol {
+class AboutWireframe: NSObject {
 
 	// MARK: - Constants
 	private let storyBoardName = "About"
@@ -20,18 +20,7 @@ class AboutWireframe: NSObject, AboutWireframeProtocol {
 
 	override init() {
 		super.init()
-
         let view = self.viewControllerFromStoryboard(AboutView.self, title: "Sobre") as! AboutView
-		let interactor = AboutInteractor()
-		let presenter = AboutPresenter()
-
-		presenter.interactor = interactor
-		presenter.wireframe = self
-		presenter.view = view
-
-		view.presenter = presenter
-		interactor.output = presenter
-
 		self.view = view
 	}
 

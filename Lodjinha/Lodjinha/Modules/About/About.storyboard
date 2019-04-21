@@ -22,9 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSobre" translatesAutoresizingMaskIntoConstraints="NO" id="E39-xd-OIv">
-                                <rect key="frame" x="0.0" y="20" width="375" height="582"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsT-IP-ZUJ">
+                                <rect key="frame" x="149.5" y="323.5" width="76" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BYf-0o-xAt">
                                 <rect key="frame" x="16" y="602" width="343" height="49"/>
                                 <subviews>
@@ -45,18 +48,27 @@
                                     <constraint firstAttribute="height" constant="49" id="tow-Yi-PQp"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSobre" translatesAutoresizingMaskIntoConstraints="NO" id="E39-xd-OIv">
+                                <rect key="frame" x="50" y="70" width="275" height="203.5"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="E39-xd-OIv" firstAttribute="leading" secondItem="T0n-7X-0uE" secondAttribute="leading" id="A5E-4o-8pZ"/>
-                            <constraint firstItem="E39-xd-OIv" firstAttribute="top" secondItem="zIR-mc-HJo" secondAttribute="bottom" id="d58-wT-shQ"/>
-                            <constraint firstAttribute="trailing" secondItem="E39-xd-OIv" secondAttribute="trailing" id="dOf-vD-YCZ"/>
+                            <constraint firstItem="E39-xd-OIv" firstAttribute="top" secondItem="zIR-mc-HJo" secondAttribute="bottom" constant="50" id="6RV-CB-jH0"/>
+                            <constraint firstItem="XsT-IP-ZUJ" firstAttribute="top" secondItem="E39-xd-OIv" secondAttribute="bottom" constant="50" id="G78-Ng-hEn"/>
+                            <constraint firstAttribute="trailing" secondItem="E39-xd-OIv" secondAttribute="trailing" constant="50" id="LrX-6K-v53"/>
+                            <constraint firstItem="E39-xd-OIv" firstAttribute="centerX" secondItem="T0n-7X-0uE" secondAttribute="centerX" id="Mc8-0L-M7j"/>
+                            <constraint firstItem="E39-xd-OIv" firstAttribute="leading" secondItem="T0n-7X-0uE" secondAttribute="leading" constant="50" id="Plw-Qx-9s9"/>
+                            <constraint firstItem="XsT-IP-ZUJ" firstAttribute="centerX" secondItem="T0n-7X-0uE" secondAttribute="centerX" id="hiU-Mk-6DC"/>
+                            <constraint firstItem="XsT-IP-ZUJ" firstAttribute="centerY" secondItem="T0n-7X-0uE" secondAttribute="centerY" id="hjc-Xp-bgv"/>
                             <constraint firstItem="BYf-0o-xAt" firstAttribute="leading" secondItem="T0n-7X-0uE" secondAttribute="leading" constant="16" id="jUh-Th-CwY"/>
                             <constraint firstItem="VJw-nr-gPZ" firstAttribute="top" secondItem="BYf-0o-xAt" secondAttribute="bottom" constant="16" id="jqC-6k-Lzy"/>
-                            <constraint firstItem="BYf-0o-xAt" firstAttribute="top" secondItem="E39-xd-OIv" secondAttribute="bottom" id="vvC-8o-5DK"/>
                             <constraint firstAttribute="trailing" secondItem="BYf-0o-xAt" secondAttribute="trailing" constant="16" id="wQc-lC-HqU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appName" destination="XsT-IP-ZUJ" id="m8J-1w-hQh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxF-vk-lxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

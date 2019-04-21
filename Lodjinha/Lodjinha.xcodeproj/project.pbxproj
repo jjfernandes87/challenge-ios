@@ -48,9 +48,6 @@
 		86B612A7226BCB7E0069AC60 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B6126B226BCB7E0069AC60 /* HomeProtocols.swift */; };
 		86B612A8226BCB7E0069AC60 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B6126D226BCB7E0069AC60 /* Banner.swift */; };
 		86B612A9226BCB7E0069AC60 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B6126F226BCB7E0069AC60 /* AboutView.swift */; };
-		86B612AA226BCB7E0069AC60 /* AboutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B61270226BCB7E0069AC60 /* AboutInteractor.swift */; };
-		86B612AB226BCB7E0069AC60 /* AboutProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B61271226BCB7E0069AC60 /* AboutProtocols.swift */; };
-		86B612AC226BCB7E0069AC60 /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B61272226BCB7E0069AC60 /* AboutPresenter.swift */; };
 		86B612AD226BCB7E0069AC60 /* AboutWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B61273226BCB7E0069AC60 /* AboutWireframe.swift */; };
 		86B612AE226BCB7E0069AC60 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B61274226BCB7E0069AC60 /* About.storyboard */; };
 		86B612AF226BCB7E0069AC60 /* ProductCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B61277226BCB7E0069AC60 /* ProductCollectionPresenter.swift */; };
@@ -76,6 +73,9 @@
 		86B612C3226BCB7E0069AC60 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B61293226BCB7E0069AC60 /* Product.swift */; };
 		86F9B433226BE4F400DD2F84 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F9B431226BE4F400DD2F84 /* LoadingCell.swift */; };
 		86F9B434226BE4F400DD2F84 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86F9B432226BE4F400DD2F84 /* LoadingCell.xib */; };
+		86F9B438226BF8F500DD2F84 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86F9B437226BF8F500DD2F84 /* Pacifico-Regular.ttf */; };
+		86F9B43A226BF93B00DD2F84 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F9B439226BF93B00DD2F84 /* Font.swift */; };
+		86F9B43C226BF9FB00DD2F84 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F9B43B226BF9FB00DD2F84 /* Bundle.swift */; };
 		86FD8CDA226BC48E0017C6F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD8CD9226BC48E0017C6F5 /* AppDelegate.swift */; };
 		86FD8CE1226BC48F0017C6F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FD8CE0226BC48F0017C6F5 /* Assets.xcassets */; };
 		86FD8CE4226BC48F0017C6F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FD8CE2226BC48F0017C6F5 /* LaunchScreen.storyboard */; };
@@ -149,9 +149,6 @@
 		86B6126B226BCB7E0069AC60 /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		86B6126D226BCB7E0069AC60 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		86B6126F226BCB7E0069AC60 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		86B61270226BCB7E0069AC60 /* AboutInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutInteractor.swift; sourceTree = "<group>"; };
-		86B61271226BCB7E0069AC60 /* AboutProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutProtocols.swift; sourceTree = "<group>"; };
-		86B61272226BCB7E0069AC60 /* AboutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutPresenter.swift; sourceTree = "<group>"; };
 		86B61273226BCB7E0069AC60 /* AboutWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWireframe.swift; sourceTree = "<group>"; };
 		86B61274226BCB7E0069AC60 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		86B61277226BCB7E0069AC60 /* ProductCollectionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionPresenter.swift; sourceTree = "<group>"; };
@@ -177,6 +174,9 @@
 		86B61293226BCB7E0069AC60 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		86F9B431226BE4F400DD2F84 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 		86F9B432226BE4F400DD2F84 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		86F9B437226BF8F500DD2F84 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		86F9B439226BF93B00DD2F84 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		86F9B43B226BF9FB00DD2F84 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		86FD8CD6226BC48E0017C6F5 /* Lodjinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lodjinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FD8CD9226BC48E0017C6F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86FD8CE0226BC48F0017C6F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -257,6 +257,7 @@
 		86B61226226BCB510069AC60 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				86F9B436226BF8D200DD2F84 /* Fonts */,
 				86FD8CE0226BC48F0017C6F5 /* Assets.xcassets */,
 				86FD8CE2226BC48F0017C6F5 /* LaunchScreen.storyboard */,
 				86FD8CE5226BC48F0017C6F5 /* Info.plist */,
@@ -312,6 +313,8 @@
 			children = (
 				86B61235226BCB720069AC60 /* String.swift */,
 				86B61236226BCB720069AC60 /* Color.swift */,
+				86F9B439226BF93B00DD2F84 /* Font.swift */,
+				86F9B43B226BF9FB00DD2F84 /* Bundle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -464,9 +467,6 @@
 			isa = PBXGroup;
 			children = (
 				86B6126F226BCB7E0069AC60 /* AboutView.swift */,
-				86B61270226BCB7E0069AC60 /* AboutInteractor.swift */,
-				86B61271226BCB7E0069AC60 /* AboutProtocols.swift */,
-				86B61272226BCB7E0069AC60 /* AboutPresenter.swift */,
 				86B61273226BCB7E0069AC60 /* AboutWireframe.swift */,
 				86B61274226BCB7E0069AC60 /* About.storyboard */,
 			);
@@ -589,6 +589,14 @@
 				86F9B432226BE4F400DD2F84 /* LoadingCell.xib */,
 			);
 			path = Tables;
+			sourceTree = "<group>";
+		};
+		86F9B436226BF8D200DD2F84 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				86F9B437226BF8F500DD2F84 /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		86FD8CCD226BC48E0017C6F5 = {
@@ -774,6 +782,7 @@
 				86B612BB226BCB7E0069AC60 /* TitleCell.xib in Resources */,
 				86FD8CE1226BC48F0017C6F5 /* Assets.xcassets in Resources */,
 				86B6129E226BCB7E0069AC60 /* BannerCell.xib in Resources */,
+				86F9B438226BF8F500DD2F84 /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -952,6 +961,7 @@
 				86B61222226BCB110069AC60 /* TabbarWireframe.swift in Sources */,
 				86B612A9226BCB7E0069AC60 /* AboutView.swift in Sources */,
 				86B61247226BCB730069AC60 /* Color.swift in Sources */,
+				86F9B43C226BF9FB00DD2F84 /* Bundle.swift in Sources */,
 				86B6124B226BCB730069AC60 /* NetworkStatus.swift in Sources */,
 				86B6129B226BCB7E0069AC60 /* EmptyCell.swift in Sources */,
 				86B612AF226BCB7E0069AC60 /* ProductCollectionPresenter.swift in Sources */,
@@ -959,18 +969,16 @@
 				86B612C2226BCB7E0069AC60 /* Category.swift in Sources */,
 				86B612AD226BCB7E0069AC60 /* AboutWireframe.swift in Sources */,
 				86B6129A226BCB7E0069AC60 /* HeaderCell.swift in Sources */,
-				86B612AA226BCB7E0069AC60 /* AboutInteractor.swift in Sources */,
 				86B612BD226BCB7E0069AC60 /* ProductDetailView.swift in Sources */,
 				86B612C0226BCB7E0069AC60 /* ProductDetailPresenter.swift in Sources */,
 				86B61246226BCB720069AC60 /* String.swift in Sources */,
-				86B612AC226BCB7E0069AC60 /* AboutPresenter.swift in Sources */,
-				86B612AB226BCB7E0069AC60 /* AboutProtocols.swift in Sources */,
 				86B6124A226BCB730069AC60 /* ApiService.swift in Sources */,
 				86B61240226BCB720069AC60 /* EndPoints.swift in Sources */,
 				86B612A6226BCB7E0069AC60 /* CollectionCategoryCell.swift in Sources */,
 				86B612BC226BCB7E0069AC60 /* ProductDetailWireframe.swift in Sources */,
 				86B6129D226BCB7E0069AC60 /* BannerCell.swift in Sources */,
 				86B612B8226BCB7E0069AC60 /* IconCell.swift in Sources */,
+				86F9B43A226BF93B00DD2F84 /* Font.swift in Sources */,
 				86B6123D226BCB720069AC60 /* SelfTableViewManagerCache.swift in Sources */,
 				86B612B1226BCB7E0069AC60 /* ProductCollectionView.swift in Sources */,
 				86B612B7226BCB7E0069AC60 /* PriceCell.swift in Sources */,

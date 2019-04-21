@@ -8,20 +8,15 @@
 
 import UIKit
 
-class AboutView: UIViewController, AboutPresenterOutputProtocol {
+class AboutView: UIViewController {
 
-	// MARK: - Viper Module Properties
-
-	var presenter: AboutPresenterInputProtocol!
-
+    @IBOutlet weak var appName: UILabel!
+    
 	// MARK: - Override methods
-
-	override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
+        self.appName.text = Bundle.main.displayName
+        self.appName.font = .pacifico
     }
-
-    // MARK: - AboutPresenterOutputProtocol
-
-	// MARK: - Private Methods
 
 }
