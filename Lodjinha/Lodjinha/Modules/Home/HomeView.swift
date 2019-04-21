@@ -26,6 +26,10 @@ class HomeView: BaseViewController, HomePresenterOutputProtocol {
         self.tableView.setRows(rows)
         self.setViewStatus(.presenting)
     }
+    
+    func errorData() {
+        self.setViewStatus(.masterError)
+    }
 
 }
 

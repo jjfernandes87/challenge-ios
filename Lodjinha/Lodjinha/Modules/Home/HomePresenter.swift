@@ -75,6 +75,7 @@ extension HomePresenter: HomeInteractorOutputProtocol {
     
     func contentResult(error: ApiRequestError) {
         print(error.message())
+        self.view.errorData()
     }
 }
 

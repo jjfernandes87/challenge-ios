@@ -38,4 +38,5 @@ protocol HomeInteractorOutputProtocol: class {
 
 protocol HomePresenterOutputProtocol: class {
     func setRows(_ rows: [AnyObject])
+    func errorData()
 }
