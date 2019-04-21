@@ -41,4 +41,5 @@ protocol ProductCollectionInteractorOutputProtocol: class {
 protocol ProductCollectionPresenterOutputProtocol: class {
     func setRows(_ rows: [AnyObject])
     func appendRows(_ rows: [AnyObject])
+    func errorData()
 }

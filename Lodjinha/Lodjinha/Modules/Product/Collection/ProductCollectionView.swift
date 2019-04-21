@@ -23,13 +23,17 @@ class ProductCollectionView: BaseViewController, ProductCollectionPresenterOutpu
     // MARK: - ProductCollectionPresenterOutputProtocol
     func setRows(_ rows: [AnyObject]) {
         self.tableView.setRows(rows)
-        self.setViewStatus(.presenting)
+        self.setViewStatus(rows.count == 0 ? .emptyData : .presenting)
     }
     
     func appendRows(_ rows: [AnyObject]) {
         self.tableView.removeAt(position: self.tableView.rows.count-1, rowsCount: 0, animation: .automatic)
         self.tableView.insertRows(rows: rows, at: self.tableView.rows.count, animation: .top)
         self.presenter.enableNextPage()
+    }
+    
+    func errorData() {
+        self.setViewStatus(.masterError)
     }
 }
 

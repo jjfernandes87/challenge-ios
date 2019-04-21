@@ -84,5 +84,6 @@ extension ProductCollectionPresenter: ProductCollectionInteractorOutputProtocol 
     
     func contentResult(error: ApiRequestError) {
         print(error.message())
+        self.view.errorData()
     }
 }
