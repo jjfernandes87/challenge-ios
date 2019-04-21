@@ -35,6 +35,10 @@ class ProductDetailView: BaseViewController, ProductDetailPresenterOutputProtoco
         self.bookButton.isEnabled = true
     }
     
+    func errorData() {
+        setViewStatus(.masterError)
+    }
+    
     @IBAction func bookAction(sender: UIButton) {
         sender.isEnabled = false
         self.presenter.bookAction()

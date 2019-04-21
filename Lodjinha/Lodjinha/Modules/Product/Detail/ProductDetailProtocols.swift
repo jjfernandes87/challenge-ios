@@ -40,4 +40,5 @@ protocol ProductDetailInteractorOutputProtocol: class {
 protocol ProductDetailPresenterOutputProtocol: class {
     func setRows(_ rows: [AnyObject])
     func enableButton()
+    func errorData()
 }

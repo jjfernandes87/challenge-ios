@@ -46,6 +46,7 @@ extension ProductDetailPresenter: ProductDetailInteractorOutputProtocol {
     func contentResult(error: ApiRequestError) {
         print(error.message())
         self.view.enableButton()
+        self.view.errorData()
     }
     
     func sentData() {
