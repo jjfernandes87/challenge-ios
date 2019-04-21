@@ -36,10 +36,14 @@ class ProductDetailWireframe: NSObject, ProductDetailWireframeProtocol {
 	}
 
     // MARK: - ProductDetailWireframeProtocol
-    func alert() {
+    func alert(action: UIAlertAction) {
         let alert = UIAlertController(title: "Produto reservado com sucesso", message: nil, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        alert.addAction(action)
         self.view.present(alert, animated: true, completion: nil)
+    }
+    
+    func pop() {
+        self.view.navigationController?.popViewController(animated: true)
     }
     
 	// MARK: - Private methods

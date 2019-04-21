@@ -6,12 +6,13 @@
 //  Copyright © 2019. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Router
 
 protocol ProductDetailWireframeProtocol: class {
-    func alert()
+    func alert(action: UIAlertAction)
+    func pop()
 }
 
 // MARK: - Interactor

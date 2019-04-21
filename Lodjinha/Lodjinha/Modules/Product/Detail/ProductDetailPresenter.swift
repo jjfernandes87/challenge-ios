@@ -49,7 +49,9 @@ extension ProductDetailPresenter: ProductDetailInteractorOutputProtocol {
     }
     
     func sentData() {
-        self.wireframe.alert()
+        self.wireframe.alert(action: UIAlertAction(title: "OK", style: .cancel) { (_) in
+            self.wireframe.pop()
+        })
         self.view.enableButton()
     }
 }
